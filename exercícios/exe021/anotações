@@ -1,0 +1,10 @@
+Pseudo-Elementos:
+# → id
+. → class
+: → pseudo-class 
+:: → pseudo-elemento 
+> → childrem
+
+
+Ele pode agir nas classes, nos elementos, nas id.
+Eles mexem no conteúdo periférico do elemento

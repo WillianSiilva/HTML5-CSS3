@@ -1,0 +1,79 @@
+Boxel Models: Primeiros passos
+
+Aplicavél a linguagem HTML5 e CSS3
+
+Quando temos um doc HTML ela são exibidas em formato de caixas, em forma de aninhamento, uma coisa dentro da outra
+
+<h1> Olá, mundo!</h1> // Isso é uma caixa
+
+Uma caixa tem um tamanho.
+
+são determinados por duas medias:
+height : Altura
+width : Largura
+
+traçar uma linha em volta da caixa, uma borda:
+border
+
+Espaço criando na borda, e ela fica distante do conteúdo:
+padding: Espaço interno, dentro da borda
+
+margin: Espaço externo da caixa, a partir da borda
+
+Tipos de caixas:
+
+1º box-level 
+→ Sempre se inicia em uma linha nova
+→ Ele ocupa o espaço total da tela, viewpor, 100%
+
+Exemplos de box-level:
+→ div 
+→ h1 
+→ p 
+→ main 
+→ header 
+→ article 
+→ nav 
+→ anside 
+→ form 
+→ video  
+
+2º inline-level 
+(Exemplo: span)
+→ Ele não pula na proxima linha
+→ Ele ocupa apenas o tamanho do conteúdo e ele continua na mesma linha
+
+Exemplos de inline-level:
+→ span 
+→ a 
+→ code 
+→ small  
+→ strong  
+→ em  
+→ sup / sub  
+→ label  
+→ button  
+→ input   
+→ select
+
+Grouping tags:
+
+Tags sematincas = com significados
+
+header = cabeçalho
+main = corpo 
+footer = rodapé
+nav = menu
+section = secções
+article = notícias
+aside = reletivo ao article 
+
+Sombras nas caixas:
+
+
+
+
+
+
+
+
