@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+        
+        div {
+            font-size: 40px;
+            padding: 30px ;
+            border: solid 5px #222;
+        }
+
+        .static {
+            top: 100px;
+            left: 100px;
+            background-color: steelblue;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 30px;
+            right: 0px;
+            background-color: tomato;
+        }
+
+        .relative1 { /*O relative leva em consideração o elemento anterior*/
+            position: relative;
+            left: 50px;
+            top: 5px;
+            background-color: aqua;
+        }
+
+        .absolute1 {
+            position: absolute;
+            left: 350px;
+            top: 120px;
+            background-color: rgb(2, 71, 48);
+        }
+
+        .relative2 {
+            position: relative;
+            left: 250px;
+            top: 2000px;
+            width: 200px;
+            height: 200px;
+            background-color: slategrey;
+        }
+
+        .absolute2 {
+            /*position: absolute;*/
+            left: 10px;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            background-color: orange;
+            /* 
+            Nesse caso ele vai se posicionar de forma absoluta em relação ao elemento pai; 
+
+            Mas caso, o elemento pai, esteja como o position padrão, static, ele vai se posicionar de forma absoluta em relação a página;
+
+            Depedendo da relação que existe entre a posição da tag pai e da tag filho, os comportamentos do position podem variar.
+            */
+        }
+
+        .sticky {
+            position: sticky;
+            background-color: #777;
+            top: 0px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="static">Static (Padrão)</div>
+    <div class="fixed">Fixed</div>
+    <div class="relative1">Relative</div>
+    <div class="absolute1">Absolute</div>
+
+    <div class="relative2">
+        <div class="absolute2"></div>
+    </div>
+
+    <div class="sticky">Sticky</div>
+    <p style="padding-bottom: 2000px;">Opa</p>
+</body>
+
+</html>
